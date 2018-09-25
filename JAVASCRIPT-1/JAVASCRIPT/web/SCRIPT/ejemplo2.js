@@ -1,26 +1,17 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-//ELEMENTOS DE DESPLAZAMIENTO EN JAVASCRIPT 1
+//El método shift () elimina el primer elemento de matriz y "desplaza" todos los demás elementos a un índice inferior.
 
-/*
- El desplazamiento es equivalente a hacer estallar, trabajando en el primer 
- elemento en lugar del último.
- */
+function miArray2() {//declaro mi funcion miArray1
 
-//El método shift () elimina el primer elemento de matriz y "desplaza" todos 
-//los demás elementos a un índice inferior.
+    let name = String(prompt("What's your name?"));//Consulta de nombre con mi método String(prompt());
+    let name_fruit = String(prompt("Enter your favorite fruit"));//Consulta de nombre fruta con mi método String(prompt());
 
-let names_cars = ["BMV", "TOYOTA", "KIA", "NISSAN", "CHEVROLET"];//declarando mi nuevo array
+    let fruits = ["Banana", "Orange", "Apple", "Watermelon", "Mango"];//inicio mi array frutas con 0-4 = 5 items
+    fruits.push(name_fruit);//agregando nueva fruta a nuestro array (agregar = push() & eliminar = pop())
 
-document.getElementById("namesCars").innerHTML =
-        "NOMBRES DE MARCAS DE CARROS: " + names_cars;//salida de mi array declarado
 
-document.getElementById("deleteFirstNameCar").innerHTML = 
-        "ITEM DESPLAZADO DE MI LISTA: "+names_cars.shift();//salida del first item que sera delete
-
-document.getElementById("newArrayListCars").innerHTML =
-        "LISTA ACTUALIZA: "+names_cars;//salida de new list array 
+    document.getElementById("namesFruits").innerHTML =  "Hola, ".concat(name, ". Hoy es: " + Date());//salida de valor mi variable name
+    document.getElementById("deleteFirstNameFruit").innerHTML =
+            "NOMBRE DE FRUTA ELIMINADA DE ARTAY: " + fruits.shift();//salida de valores de mi array frutas + método join ("-")
+    document.getElementById("nuevoArrayNamesFruits").innerHTML = "NUEVA LISTA: " + fruits;//salida de length de mi array
+};
