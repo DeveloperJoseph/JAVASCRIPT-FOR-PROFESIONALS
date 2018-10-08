@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="SCRIPT/ejemplo_11.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <center>
+        <div>Ver resultados, presionar F12</div>
+        <br/>
+        <textarea style="width: 900px;height: 100px">
+        console.log(isNumber(null), isNumber(undefined));// retorna => false , false
+        console.log(isNumber('abc'), isNumber([]), isNumber(() => 1));// retorna => false , false, false
+        console.log(isNumber(0),isNumber(Number('10.1')), isNumber(NaN));// retorna => true, true, true
+        </textarea>
+    </center>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <script>
+                let canvas = document.createElement('canvas');
+                canvas.width = 500;
+                canvas.height = 250;
+                
+                let ctx = canvas.getContext('2d');
+                ctx.font = '30px Cursive';
+                ctx.fillText("Hello World!", 50, 50);
+                document.body.appendChild(canvas);
+            </script>
+        </div>
+    </body>
+</html>
